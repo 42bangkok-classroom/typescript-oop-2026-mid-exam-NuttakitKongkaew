@@ -16,4 +16,6 @@ if(n >= 80 && n <= 100){
     console.log("Grade is D");
 }else if (n < 50 && n >= 0){
     console.log(`Grade is F`);
+}else{
+    console.log("Invalid Input")
 }
