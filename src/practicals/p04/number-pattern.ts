@@ -1,13 +1,23 @@
 // Write your code below
-export{}
+export {};
+
 const input = process.argv[2];
 const size = Number(input);
 
-for(let i =1 ; i<size-1 ; i++ ) {
-  let row = ""
-  for(let j =0 ; j<size ; j++ ){
-    row += i
+for (let i = 1; i <= size; i++) {
+  let row = "";
+  for (let j = size; j > i; j--) {
+    row += " ";
+  }
+  for (let j = i; j >= 1; j--) {
+    row += j;
   }
   console.log(row);
 }
-// j=4 i=1
+
+
+//     1
+//    21
+//   321
+//  4321
+// 54321
