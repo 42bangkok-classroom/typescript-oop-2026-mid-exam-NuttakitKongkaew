@@ -3,7 +3,7 @@ let input = process.argv.slice(2);
 let n = Number(input[0]);
 let raw = input[0];
 if(raw == "" || raw == " "){
-    console.log("Invalid Input");
+    console.log("Invalid input");
     process.exit();
 }
 if(n >= 80 && n <= 100){
@@ -17,5 +17,5 @@ if(n >= 80 && n <= 100){
 }else if (n < 50 && n >= 0){
     console.log(`Grade is F`);
 }else{
-    console.log("Invalid Input")
+    console.log("Invalid input")
 }
